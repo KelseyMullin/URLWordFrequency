@@ -2,9 +2,9 @@ public class Word implements Comparable<Word>{
     private String word;
     private int frequency;
 
-    public Word(String w, int f){
-        this.word = w;
-        this.frequency = f;
+    public Word(String word, int frequency){
+        this.word = word;
+        this.frequency = frequency;
     }
 
     public int getFrequency() {
