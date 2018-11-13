@@ -1,6 +1,6 @@
 # URLWordFrequency
 
-Accepts URL from command line and uses JSOUP to parse text.  Sorts individual words and reports the 25 most frequently used words on the page.
+Accepts URL from command line and uses jsoup to parse text.  Sorts individual words and reports the 25 most frequently used words on the page.
 
 ## Resources
 
