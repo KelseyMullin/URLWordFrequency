@@ -1,11 +1,13 @@
-import org.apache.commons.validator.routines.UrlValidator;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.ListIterator;
 import java.util.regex.Pattern;
 
 public class WordList {
@@ -25,7 +27,15 @@ public class WordList {
         this.url = url;
     }
 
-    private void addWordsFromURL() {
+    public void printSortedList(int num){
+        this.addWordsFromUrl();
+        if(!this.wordList.isEmpty()) {
+            Collections.sort(wordList);
+            this.print(num);
+        }
+    }
+
+    private void addWordsFromUrl() {
         try{
             String[] currentLine;
             boolean match;
@@ -124,66 +134,6 @@ public class WordList {
             s = s.concat(": " + w);
             System.out.printf("%-30.30s  %-20.20s%n", s, f);
             i++;
-        }
-    }
-
-    public boolean checkURL() {
-        String[] schemes = {"http", "https"};
-        UrlValidator validator = new UrlValidator(schemes, UrlValidator.ALLOW_LOCAL_URLS);
-        if (!validator.isValid(this.url)) {
-            System.out.println("Please enter a valid URL.");
-            return false;
-        }
-        return true;
-    }
-
-    public static String acceptURL() {
-        System.out.println("Enter a URL");
-        Scanner input = new Scanner(System.in);
-        String URL = input.nextLine();
-        if(!URL.startsWith("http://", 0) && !URL.startsWith("https://", 0)){
-            if(!URL.startsWith("www.", 0)){
-                System.out.println("Do you want your URL to include \"www.\"? Y/N");
-                boolean tryAgain = true;
-                while (tryAgain) {
-                    String answer = input.next();
-                    if (answer.equalsIgnoreCase("Y")) {
-                        URL = "www." + URL;
-                        tryAgain = false;
-                    }
-                    else if (answer.equalsIgnoreCase("N")) {
-                        tryAgain = false;
-                    }
-                    else {
-                        System.out.println(answer + " is not a valid response.");
-                        System.out.println("Do you want your URL to include \"www.\"? Y/N");
-                    }
-                }
-            }
-            URL = "http://" + URL;
-        }
-        return URL;
-    }
-
-    public void printSortedList(int num){
-        if(checkURL()) {
-            this.addWordsFromURL();
-            if(!this.wordList.isEmpty()) {
-                Collections.sort(wordList);
-                this.print(num);
-            }
-        }
-    }
-
-    public static void main(String[] args) {
-        String URL = acceptURL();
-        WordList words = new WordList(URL);
-        boolean valid = words.checkURL();
-        if (valid) {
-            words.printSortedList(25);
-        }
-        else {
-            System.out.println("\"" + words.getURL() + "\" is not a valid URL.");
         }
     }
 }
