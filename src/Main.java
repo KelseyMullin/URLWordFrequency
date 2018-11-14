@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         UserInputUrl inputUrl = new UserInputUrl();
@@ -12,8 +14,9 @@ public class Main {
                 System.out.println("\"" + inputUrl.getUrl() + "\" is not a valid URL.");
             }
             System.out.println("Do you want to try another URL? Y/N");
-            int answer = UserInputUrl.acceptAnswer();
-            if (answer != 1)
+            Scanner input = new Scanner(System.in);
+            String answer = input.next();
+            if (!answer.equalsIgnoreCase("Y"))
                 runAgain = false;
         }
     }

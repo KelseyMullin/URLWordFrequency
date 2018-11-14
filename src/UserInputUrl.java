@@ -44,7 +44,7 @@ public class UserInputUrl {
         this.url = tempUrl;
     }
 
-    protected static int acceptAnswer() {
+    private int acceptAnswer() {
         Scanner input = new Scanner(System.in);
         String answer = input.next();
         if (answer.equalsIgnoreCase("Y"))

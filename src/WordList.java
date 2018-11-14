@@ -82,7 +82,7 @@ public class WordList {
         }
     }
 
-    private static void removePunctuation(String[] currentLine) {
+    private void removePunctuation(String[] currentLine) {
         String rgx1 = "\\W*\\w+['.!\\-]\\w+\\W*";                               //ex: roly-poly! or "roly-poly"
         String rgx2 = "\\W*[~!@#$%^&*()_+=\\[\\]\\\\{}|;':\",./<>?\\-\\d]+\\W*"; //ex. hello!! or 1234
         String rgx3 = "[~!@#$%^&*()_+=\\[\\]\\\\{}|;':\",./<>?\\-\\d]";         //single punctuation character or digit
@@ -113,7 +113,7 @@ public class WordList {
         }                                                                 //and ends of words, and with spaces both sides
     }
 
-    private static boolean isWord(String s) {                   //optional: use this method in line 34 instead of isEmpty()
+    private boolean isWord(String s) {                   //optional: use this method in line 34 instead of isEmpty()
         if (s.isEmpty() || !s.matches(".*[a-zA-Z]+.*")) {   // in order to exclude words with no characters
             return false;                                        // from Roman alphabet
         }
