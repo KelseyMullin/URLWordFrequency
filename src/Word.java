@@ -2,20 +2,20 @@ public class Word implements Comparable<Word>{
     private String word;
     private int frequency;
 
-    public Word(String word, int frequency){
+    protected Word(String word, int frequency){
         this.word = word;
         this.frequency = frequency;
     }
 
-    public int getFrequency() {
+    protected int getFrequency() {
         return frequency;
     }
 
-    public String getWord() {
+    protected String getWord() {
         return word;
     }
 
-    public void increase() {
+    protected void increase() {
         this.frequency++;
     }
 
