@@ -4,6 +4,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.net.ConnectException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -36,7 +37,7 @@ public class WordList {
     }
 
     private void addWordsFromUrl() {
-        try{
+        try {
             String[] currentLine;
             boolean match;
             Document doc = Jsoup.connect(url)
@@ -45,10 +46,9 @@ public class WordList {
                     .get();
 
             Elements elements = doc.select("body");
-            if(!elements.hasText()){
+            if (!elements.hasText()) {
                 System.out.println(this.url + " contains no text.  It may not exist, or you may not have permission to access it.");
-            }
-            else {
+            } else {
                 for (Element textChunk : elements) {
                     String str = textChunk.text();
                     currentLine = str.split("[\\.\\s+\\r\\n]");
