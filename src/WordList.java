@@ -14,20 +14,20 @@ public class WordList {
     private String url;
     private ArrayList<Word> wordList;
 
-    public WordList(String url) {
+    protected WordList(String url) {
         this.url = url;
         this.wordList = new ArrayList<Word>();
     }
 
-    public String getURL() {
+    protected String getURL() {
         return url;
     }
 
-    public void setURL(String url) {
+    protected void setURL(String url) {
         this.url = url;
     }
 
-    public void printSortedList(int num){
+    protected void printSortedList(int num){
         this.addWordsFromUrl();
         if(!this.wordList.isEmpty()) {
             Collections.sort(wordList);
