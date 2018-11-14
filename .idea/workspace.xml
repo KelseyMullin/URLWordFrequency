@@ -2,11 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24215a23-7068-4b71-be1a-abf89c4e8630" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserInputUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInputUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Word.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/AbstractCalendarValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/AbstractFormatValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/AbstractNumberValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/BigDecimalValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/BigIntegerValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/ByteValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/CalendarValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/CodeValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/CreditCardValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/CurrencyValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/DateValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/DomainValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/DoubleValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/EmailValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/FloatValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/IBANValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/ISBNValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/ISSNValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/InetAddressValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/IntegerValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/LongValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/PercentValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/RegexValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/ShortValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/TimeValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/checkdigit/ABANumberCheckDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/checkdigit/CUSIPCheckDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/checkdigit/CheckDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/checkdigit/CheckDigitException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/checkdigit/EAN13CheckDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/checkdigit/IBANCheckDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/checkdigit/ISBN10CheckDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/checkdigit/ISBNCheckDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/checkdigit/ISINCheckDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/checkdigit/ISSNCheckDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/checkdigit/LuhnCheckDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/checkdigit/ModulusCheckDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/checkdigit/ModulusTenCheckDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/checkdigit/SedolCheckDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/checkdigit/VerhoeffCheckDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routines/checkdigit/package.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,13 +63,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="java" value="7" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="7" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -66,7 +103,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/UserInputUrl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
+            <state relative-caret-position="-85">
               <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
               <folding>
                 <element signature="e#106#107#0" expanded="true" />
@@ -83,10 +120,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/routines/UrlValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-9743">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+            <state relative-caret-position="154">
+              <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -148,6 +197,12 @@
             </path>
             <path>
               <item name="URLWordFrequency" type="b2602c69:ProjectViewProjectNode" />
+              <item name="URLWordFrequency" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="routines" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="URLWordFrequency" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -159,7 +214,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542211275707" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542212043224" />
     <property name="last_opened_file_path" value="C:/JSOUP" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -237,7 +292,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2579491" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -296,9 +350,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/UserInputUrl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
+        <state relative-caret-position="-85">
           <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding>
             <element signature="e#106#107#0" expanded="true" />
@@ -313,10 +374,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/routines/UrlValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        <state relative-caret-position="-9743">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
