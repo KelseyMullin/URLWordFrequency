@@ -75,9 +75,10 @@ public class WordList {
                 }
             }
         }
-        catch (IOException ex){
-            System.out.println("Could not connect to \"" + this.url + "\".  Make sure you entered the correct URL.");
-            ex.printStackTrace();
+        catch (ConnectException ex) {
+            System.out.println("ConnectException: could not connect to " + this.url);
+        } catch (IOException ex) {
+            System.out.println("IOException: could not connect to " + this.url + ".  Make sure you entered the correct URL.");
         }
     }
 
